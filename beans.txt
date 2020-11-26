@@ -1,0 +1,123 @@
+SELECT
+	concat ( to_char( 日期, 'YYYY-MM' ), '-01' ) AS 月份,日期,姓名,身份证,业务名称,SUBSTR(业务编码,0,7) as 项目编码,业务编码,中心编码,主管编码,组别编码
+FROM
+	sc0001 UNION ALL
+SELECT
+	s23.月份,s23.日期,
+	s23.姓名,s23.身份证,s23.业务名称,s23.项目编码,s23.业务编码,s23.中心编码,s23.主管编码,s23.组别编码 
+FROM
+	(
+	SELECT
+		concat ( to_char( 日期, 'YYYY-MM' ), '-01' ) AS 月份,日期,姓名,身份证,业务名称,SUBSTR(业务编码,0,7) as 项目编码,业务编码,中心编码,主管编码,组别编码 
+	FROM
+		sc0002 UNION ALL
+	SELECT
+		s34.月份,s34.日期,
+		s34.姓名,s34.身份证,s34.业务名称,s34.项目编码,s34.业务编码,s34.中心编码,s34.主管编码,s34.组别编码 
+	FROM
+		(
+		SELECT
+			concat ( to_char( 日期, 'YYYY-MM' ), '-01' ) AS 月份,日期,姓名,身份证,业务名称,SUBSTR(业务编码,0,7) as 项目编码,业务编码,中心编码,主管编码,组别编码 
+		FROM
+			sc0003 UNION ALL
+		SELECT
+			s45.月份,s45.日期,
+			s45.姓名,s45.身份证,s45.业务名称,s45.项目编码,s45.业务编码,s45.中心编码,s45.主管编码,s45.组别编码 
+		FROM
+			(
+			SELECT
+				concat ( to_char( 日期, 'YYYY-MM' ), '-01' ) AS 月份,日期,姓名,身份证,业务名称,SUBSTR(业务编码,0,7) as 项目编码,业务编码,中心编码,主管编码,组别编码 
+			FROM
+				sc0004 UNION ALL
+			SELECT
+				s56.月份,s56.日期,
+				s56.姓名,s56.身份证,s56.业务名称,s56.项目编码,s56.业务编码,s56.中心编码,s56.主管编码,s56.组别编码 
+			FROM
+				(
+				SELECT
+					concat ( to_char( 日期, 'YYYY-MM' ), '-01' ) AS 月份,日期,姓名,身份证,业务名称,SUBSTR(业务编码,0,7) as 项目编码,业务编码,中心编码,主管编码,组别编码 
+				FROM
+					sc0005 UNION ALL
+				SELECT
+					s67.月份,s67.日期,
+					s67.姓名,s67.身份证,s67.业务名称,s67.项目编码,s67.业务编码,s67.中心编码,s67.主管编码,s67.组别编码 
+				FROM
+					(
+					SELECT
+						concat ( to_char( 日期, 'YYYY-MM' ), '-01' ) AS 月份,日期,姓名,身份证,业务名称,SUBSTR(业务编码,0,7) as 项目编码,业务编码,中心编码,主管编码,组别编码 
+					FROM
+						sc0006 UNION ALL
+					SELECT
+						s78.月份,s78.日期,
+						s78.姓名,s78.身份证,s78.业务名称,s78.项目编码,s78.业务编码,s78.中心编码,s78.主管编码,s78.组别编码 
+					FROM
+						(
+						SELECT
+							concat ( to_char( 日期, 'YYYY-MM' ), '-01' ) AS 月份,日期,姓名,身份证,业务名称,SUBSTR(业务编码,0,7) as 项目编码,业务编码,中心编码,主管编码,组别编码 
+						FROM
+							sc0007 UNION ALL
+						SELECT
+							s89.月份,s89.日期,
+							s89.姓名,s89.身份证,s89.业务名称,s89.项目编码,s89.业务编码,s89.中心编码,s89.主管编码,s89.组别编码 
+						FROM
+							(
+							SELECT
+								concat ( to_char( 日期, 'YYYY-MM' ), '-01' ) AS 月份,日期,姓名,身份证,业务名称,SUBSTR(业务编码,0,7) as 项目编码,业务编码,中心编码,主管编码,组别编码 
+							FROM
+								sc0008 UNION ALL
+							SELECT
+								s910.月份,s910.日期,
+								s910.姓名,s910.身份证,s910.业务名称,s910.项目编码,s910.业务编码,s910.中心编码,s910.主管编码,s910.组别编码 
+							FROM
+								(
+								SELECT
+									concat ( to_char( 日期, 'YYYY-MM' ), '-01' ) AS 月份,日期,姓名,身份证,业务名称,SUBSTR(业务编码,0,7) as 项目编码,业务编码,中心编码,主管编码,组别编码 
+								FROM
+									sc0009 UNION ALL
+								SELECT
+									s1011.月份,s1011.日期,
+									s1011.姓名,s1011.身份证,s1011.业务名称,s1011.项目编码,s1011.业务编码,s1011.中心编码,s1011.主管编码,s1011.组别编码 
+								FROM
+									(
+									SELECT
+										concat ( to_char( 日期, 'YYYY-MM' ), '-01' ) AS 月份,日期,姓名,身份证,业务名称,SUBSTR(业务编码,0,7) as 项目编码,业务编码,中心编码,主管编码,组别编码 
+									FROM
+										sc0010 UNION ALL
+									SELECT
+										s1112.月份,s1112.日期,
+										s1112.姓名,s1112.身份证,s1112.业务名称,s1112.项目编码,s1112.业务编码,s1112.中心编码,s1112.主管编码,s1112.组别编码 
+									FROM
+										(
+										SELECT
+											concat ( to_char( 日期, 'YYYY-MM' ), '-01' ) AS 月份,日期,姓名,身份证,业务名称,SUBSTR(业务编码,0,7) as 项目编码,业务编码,中心编码,主管编码,组别编码 
+										FROM
+											sc0011 UNION ALL
+										SELECT
+											s1213.月份,s1213.日期,
+											s1213.姓名,s1213.身份证,s1213.业务名称,s1213.项目编码,s1213.业务编码,s1213.中心编码,s1213.主管编码,s1213.组别编码
+										FROM
+											(
+											SELECT
+												concat ( to_char( 日期, 'YYYY-MM' ), '-01' ) AS 月份,日期,姓名,身份证,业务名称,SUBSTR(业务编码,0,7) as 项目编码,业务编码,中心编码,主管编码,组别编码 
+											FROM
+												sc0012 UNION ALL
+											SELECT
+												concat ( to_char( 日期, 'YYYY-MM' ), '-01' ) AS 月份,日期,姓名,身份证,业务名称,SUBSTR(业务编码,0,7) as 项目编码,业务编码,中心编码,主管编码,组别编码 
+											FROM
+												sc0013 
+											) AS s1213 
+										) AS s1112 
+									) AS s1011 
+								) AS s910 
+							) AS s89 
+						) AS s78 
+					) AS s67 
+				) AS s56 
+			) AS s45 
+		) AS s34 
+	) AS s23
+	
+WHERE 请补充条件
+
+	
+	
